@@ -1,0 +1,596 @@
+﻿/*BOTTOM NAVIGATION BAR*/
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
+
+.nav .ui-btn { 
+    padding-bottom: 15px ;
+    padding-top: 35px !important; 
+    height: 2px;
+    background: #00bad6 !important;
+    border: 0;
+    color: #f7f1d9 !important;
+    text-shadow:0 0 0 !important;
+}
+
+.nav .ui-btn:after { 
+    width: 30px!important; 
+    height: 30px!important; 
+    margin-left: -15px !important; 
+    -moz-box-shadow: none!important; 
+    -webkit-box-shadow: none!important; 
+    box-shadow: none!important; 
+    -webkit-border-radius: 0 !important; 
+    border-radius: 0 !important; 
+    margin-top: -5px !important;
+}
+
+.nav li .ui-focus, .nav li .ui-btn:focus {
+    -moz-box-shadow: 0 0 0 transparent !important;
+    -webkit-box-shadow: 0 0 0 transparent !important;
+    box-shadow: 0 0 0 transparent !important;
+}
+
+.tab-content {
+    display:none;
+}
+
+.tab-content:first-child {
+    display:block;
+}
+
+.navTab {
+    width: 16.65% !important;  
+    clear: none !important;  
+}
+
+#live:after { 
+    background: url("../images/clockWhite.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#live.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-right: 1px solid #000000;
+}
+
+#live.ui-btn-active:after {
+    background: url("../images/clockBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#events:after { 
+    background: url("../images/starWhite.png") 50% 50% no-repeat; 
+    background-size: 24px 24px;  
+}
+
+#events.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+#events.ui-btn-active:after {
+    background: url("../images/starBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#weekly:after { 
+    background: url("../images/calendarWhite.png") 50% 50% no-repeat;  
+    background-size: 24px 24px; 
+}
+
+#weekly.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+#weekly.ui-btn-active:after {
+    background: url("../images/calendarBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#moods:after { 
+    background: url("../images/smileWhite.png") 50% 50% no-repeat;  
+    background-size: 24px 24px; 
+}
+
+#moods.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+#moods.ui-btn-active:after {
+    background: url("../images/smileBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#map:after { 
+    background: url("../images/compassWhite.png") 50% 50% no-repeat;  
+    background-size: 24px 24px; 
+}
+
+#map.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+#map.ui-btn-active:after {
+    background:  url("../images/compassBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+#settings:after { 
+    background:  url("../images/cogWhite.png") 50% 50% no-repeat;  
+    background-size: 24px 24px; 
+}
+
+#settings.ui-btn-active {
+    background: #B6F2EB !important;
+    color: #000000 !important;
+    border-left: 1px solid #000000;
+}
+
+#settings.ui-btn-active:after {
+    background:  url("../images/cogBlack.png") 50% 50% no-repeat; 
+    background-size: 24px 24px; 
+}
+
+/*SLIDE OUT PANEL*/
+.ui-panel {
+    background-color: #0197ae !important; 
+}
+
+.ui-panel-animate {
+    transition: transform 450ms ease 0s !important;
+}   
+
+.panelTab {
+    clear: none !important;  
+}
+
+#mainPage .ui-panel-display-reveal {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#mainPage .ui-panel-page-content-position-left {
+    -webkit-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+    -moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+    box-shadow: -5px 0 5px rgba(0,0,0,.15);
+}
+
+.ui-panel a {
+	color: #f7f1d9 !important;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+	font-size: 1.6em;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #f7f1d9; 
+	font-weight: 600;
+}
+.ui-panel ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    background-color: #02c2e0 !important;
+}
+
+.ui-panel-inner {
+	padding: 0;
+}
+
+.ui-panel a:active {
+	background-color: #B6F2EB;
+    color: #00bad6 !important;
+}
+
+#recent {
+    border-top: 1px solid #f7f1d9; 
+}
+
+#recent:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/flagWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#recent:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#recent:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/flagBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#recent:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#concierge:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/ribbonWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#concierge:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#concierge:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/ribbonBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#concierge:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#contactUs:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/airplaneWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#contactUs:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#contactUs:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/airplaneBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#contactUs:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#aboutFeatured:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/magnifyWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#aboutFeatured:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#aboutFeatured:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/magnifyBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#aboutFeatured:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#logout:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/logoutWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#logout:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#logout:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/logoutBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#logout:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#restaurantLinks {
+    margin-top: 15%;
+}
+
+#manageRestaurant {
+    border-top: 1px solid #f7f1d9;
+}
+
+#manageRestaurant:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/wrenchWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#manageRestaurant:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#manageRestaurant:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/wrenchBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#manageRestaurant:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#createRestaurant:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    margin-left: 6%;
+    top: 3px;
+    content: "";
+    background: url("../images/profileWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#createRestaurant:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowWhite.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#createRestaurant:active:before {
+    display: inline-block;
+    position: relative !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 4%;
+    top: 3px;
+    content: "";
+    background: url("../images/profileBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#createRestaurant:active:after {
+    position: relative !important;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-right: 7%;
+    top: 5px;
+    content: "";
+    background: url("../images/arrowBlue.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+#personalProfile {
+    text-align: center;
+    color: #f7f1d9;
+    text-shadow:0 0 0;
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+    margin-top: -3%;
+    margin: 0;
+    outline:none;
+    vertical-align: top;
+    border-top: 1px solid #f7f1d9;
+    background-color: #02afc9 !important;
+}
+
+#restaurantProfile {
+    text-align: center;
+    color: #f7f1d9;
+    text-shadow:0 0 0;
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+    margin-top: 10% !important;
+    margin: 0;
+    outline:none;
+    vertical-align: bottom;
+    border-top: 1px solid #f7f1d9;
+    background-color: #02afc9 !important;
+}
+
+.textLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    width: 230px !important;
+    height: 58px !important;
+}
+
+#copyright {
+    text-align: center;
+    color: #f7f1d9;
+    text-shadow:0 0 0;
+    margin-top: 6%;
+}

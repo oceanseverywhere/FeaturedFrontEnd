@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "c:\\stevehamm.keystore",
+      "storePassword": "chicken",
+      "alias": "stevehamm",
+      "password": "chicken",
+      "keystoreType": ""
+    }
+  }
+}

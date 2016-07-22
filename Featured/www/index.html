@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com  https://bdaltx93vd.execute-api.us-east-1.amazonaws.com/prod/createaccount https://bdaltx93vd.execute-api.us-east-1.amazonaws.com/prod/login 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <title>Featured</title>
+</head>
+<body>
+    <!--LOGIN PAGE-->
+    <div data-role="page" id="loginPage" data-title="loginPage">
+        <img src="images/featuredStackedWhite.png" class="loginLogo" />
+        <div id="inputboxes">
+            <input type="email" name="loginEmail" class="textbox" id="loginEmail" value="" placeholder="Email" data-mini="true">
+            <input type="password" name="loginPassword" class="textbox" id="loginPassword" value="" placeholder="Password" data-mini="true">
+        </div>
+        <a data-role="button" class="login" id="login">Login</a>
+        <a href="#"><img src="images/facebook.png" class="facebook" /></a>
+        <div class="bottom">
+            <p id="loginAsGuest"><a href="#" id="guestLogin">Login as Guest</a></p>
+            <p><a href="#" class="newMember" id="createAccountLink">Not a Featured member yet?</a></p>
+        </div>
+    </div>
+    <!--CREATE ACCOUNT PAGE-->
+    <div data-role="page" data-title="createAccountPage" id="createAccountPage">
+        <div role="main" class="ui-content">
+            <img src="images/featuredStackedWhite.png" id="createAccountLogo" />
+            <input type="email" class="textbox" id="createEmail" placeholder="Email" data-mini="true" />
+            <input type="text" class="textbox" id="createName" placeholder="Name" data-mini="true" />
+            <input type="password" class="textbox" id="createPassword" placeholder="Password" data-mini="true" />
+            <input type="password" class="textbox" id="confirmPassword" placeholder="Confirm Password" data-mini="true" />
+            <a data-role="button" name="createAccount" class="createAccountBtn" id="createAccountBtn">Create Account</a>
+            <a href="#" data-rel="back" id="back">Back to Login</a>
+        </div>
+    </div>
+    <!--MAIN PAGE-->
+    <div data-role="page" id="mainPage" data-title="mainPage">
+        <!--SLIDE OUT MENU-->
+        <div data-role="panel" data-position="left" id="panelMenu">
+            <img src="images/featuredText.png" class="textLogo" /><br />
+            <p id="personalProfile">Personal Profile</p>
+            <ul>
+                <li class="panelTab"><a href="#" data-href="recentTab" id="recent">RECENT</a></li>
+                <li class="panelTab"><a href="#" data-href="conciergeTab" id="concierge">CONCIERGE</a></li>
+                <li class="panelTab"><a href="#" data-href="contactTab" id="contactUs">CONTACT US</a></li>
+                <li class="panelTab"><a href="#" data-href="aboutTab" id="aboutFeatured">ABOUT</a></li>
+                <li class="panelTab"><a href="#" data-href="logoutTab" id="logout">LOGOUT</a></li>
+            </ul>
+            <p id="restaurantProfile">Restaurant Owners</p>
+            <ul>
+                <li class="panelTab"><a href="#" data-href="manageRestaurantTab" id="manageRestaurant">Manage Profile</a></li>
+                <li class="panelTab"><a href="#" data-href="createRestaurantTab" id="createRestaurant">Create Profile</a></li>
+            </ul>
+            <p id="copyright">&copy; 2016 Featured<p>
+        </div>
+        <!--HEADER-->
+        <div data-role="header" data-position="fixed" class="head" id="header" style="overflow:hidden;" data-tap-toggle="false">
+            <a href="#panelMenu" data-role="none"><img src="images/hamburger.png" class="hamburger" id="hamburger" /></a>
+
+            <h1 class="pagetitle">Live Features</h1>
+            <!--<img src="images/featuredLogoWhite.png" class="headerLogo" id="headerLogo" />-->
+        </div>
+        <div data-role="main" class="ui-content">
+            <!--LIVE TAB-->
+            <div id="liveTab" class="tab-content" data-title="liveTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Live Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--Events TAB-->
+            <div id="eventsTab" class="tab-content" data-title="eventsTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Events Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--WEEKLY TAB-->
+            <div id="weeklyTab" class="tab-content" data-title="weeklyTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Weekly Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--MOODS TAB-->
+            <div id="moodsTab" class="tab-content" data-title="moodsTab">
+                <!--<img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Moods Content</p>
+                <p id="contentSmall">coming soon</p>-->
+                <div id="moodsHeader">
+                    <p>Hello</p>
+                </div>
+                <a href="#" data-href="#" data-icon="custom" id="moodsYes"></a>
+                <a href="#" data-href="#" data-icon="custom" id="moodsNo"></a>
+            </div>
+            <!--MAP TAB-->
+            <div id="mapTab" class="tab-content" data-title="mapTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Map Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--SETTINGS TAB-->
+            <div id="settingsTab" class="tab-content" data-title="settingsTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Settings Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--RECENT TAB-->
+            <div id="recentTab" class="tab-content" data-title="recentTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Recent Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--CONCIERGE TAB-->
+            <div id="conciergeTab" class="tab-content" data-title="conciergeTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Concierge Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--CONTACT US TAB-->
+            <div id="contactTab" class="tab-content" data-title="contactTab">
+                <img src="images/featuredStacked.png" class="contactLogo" />
+                <p id="contactContent">General Inquiries</p>
+                <p id="contactEmail"><a href="mailto:general@getfeaturedapp.com" id="emailLink">general@getfeaturedapp.com</a></p>
+                <p id="contactContent">Sales & Marketing</p>
+                <p id="contactEmail"><a href="mailto:sales@getfeaturedapp.com" id="emailLink">sales@getfeaturedapp.com</a></p>
+                <p id="contactContent">Technical Support</p>
+                <p id="contactEmail"><a href="mailto:support@getfeaturedapp.com" id="emailLink">support@getfeaturedapp.com</a></p>
+            </div>
+            <!--ABOUT TAB-->
+            <div id="aboutTab" class="tab-content" data-title="aboutTab">
+                <img src="images/featuredStacked.png" class="aboutLogo" />
+                <p id="aboutCopyright">&copy; 2016 Soshel Tech Inc.</p>
+                <h1 id="aboutTitle">What is Featured ?</h1>
+                <p id="aboutContent">
+                    Featured is a new mobile app that allows restaurants to connect directly with you to feature
+                    their specials and live deals while collecting your feedback. It offers you a single access point for information
+                    to help you decide where to eat, drink, and be merry. Featured also gives suggestions for where to go based on past
+                    experiences and your mood. You can also choose to receive push notifications from your favorite restaurants. Whether
+                    your looking for food or drinks, or you're selling them, Featured is the only app you need.
+                </p>
+                <h1 id="aboutTitle">Who are we ?</h1>
+                <p id="aboutHeading">Management Team</p>
+                <div id="managementTeam">
+                    <p id="aboutContent">
+                        <b>Matt Nicholson</b> - CEO/ Co-Founder<br /><b>Greg Wallace</b> - COO/ Co-Founder<br />
+                        <b>Will Trivett</b> - CTO/ Co-Founder<br /><b>John Morrison</b> - VP Operations
+                    </p>
+                </div>
+                <p id="aboutHeading">Development Team</p>
+                <div id="developmentTeam">
+                    <p id="aboutContent">
+                        <b>Steve Hamm</b> - Front End Developer<br /><b>Jeremy Murphy</b> - Back End Developer<br />
+                        <b>Alex Wright</b> - Front End Developer<br /><b>Chris Dunphy</b>- Back End Developer
+                    </p>
+                </div>
+                <h1 id="aboutTitle">Need More Info ?</h1>
+                <p id="aboutContent"><a href="http://www.getfeaturedapp.com" id="webLink">www.getfeaturedapp.com</a></p>
+            </div>
+            <!--Logout TAB-->
+            <div id="logoutTab" class="tab-content" data-title="logoutTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Logout Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--MANAGE RESTAURANT PROFILE TAB-->
+            <div id="manageRestaurantTab" class="tab-content" data-title="manageRestaurantTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Manage Restaurant Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+            <!--CREATE RESTAURANT PROFILE TAB-->
+            <div id="createRestaurantTab" class="tab-content" data-title="createRestaurantTab">
+                <img src="images/featuredStacked.png" class="contentLogo" />
+                <p id="pageContent">Create Restaurant Content</p>
+                <p id="contentSmall">coming soon</p>
+            </div>
+        </div>
+        <!--MAIN PAGE NAVIGATION BAR-->
+        <div data-role="footer" data-theme="b" class="nav" data-position="fixed" data-tap-toggle="false">
+            <div data-role="navbar" class="nav" id="navbar">
+                <ul>
+                    <li class="navTab"><a href="#" data-href="liveTab" data-icon="custom" class="ui-btn-active ui-state-persist" id="live">Live</a></li>
+                    <li class="navTab"><a href="#" data-href="eventsTab" data-icon="custom" id="events">Events</a></li>
+                    <li class="navTab"><a href="#" data-href="weeklyTab" data-icon="custom" id="weekly">Weekly</a></li>
+                    <li class="navTab"><a href="#" data-href="moodsTab" data-icon="custom" id="moods">Moods</a></li>
+                    <li class="navTab"><a href="#" data-href="mapTab" data-icon="custom" id="map">Map</a></li>
+                    <li class="navTab"><a href="#" data-href="settingsTab" data-icon="custom" id="settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

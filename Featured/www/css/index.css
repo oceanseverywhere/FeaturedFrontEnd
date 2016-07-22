@@ -1,0 +1,451 @@
+﻿html {
+    overflow: hidden !important;
+}
+
+body {
+    background-color: #00bad6 !important;
+    overflow: hidden !important;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden !important;
+    position: relative !important;
+}
+
+@font-face {
+    font-family: "pacifico";
+    src: url('../css/fonts/Pacifico.ttf') format("opentype"),  
+         url('../css/fonts/Pacifico.ttf') format('embedded-opentype'); 
+	     url('../css/fonts/Pacifico.ttf') format('woff'), 
+	     url('../css/fonts/Pacifico.ttf')  format('truetype'),
+	     url('../css/fonts/Pacifico.ttf') format('svg');
+}
+
+#loginPage {
+    height: 100% !important; 
+    position:relative !important;
+    background-color: #00bad6;
+}
+
+#createAccountPage {
+    height: 100% !important; 
+    position:relative !important;
+    background-color: #00bad6;
+}
+
+#mainPage {
+    height: 100% !important; 
+    position:relative !important;
+    background-color: #faf6e7 !important;
+}
+
+.ui-bar-a .ui-shadow, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a, .ui-body-b, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b,
+.ui-bar-c, .ui-body-c, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c, .ui-bar-c, .ui-body-d, .ui-btn-up-d, .ui-btn-hover-d,
+.ui-btn-down-d, .ui-bar-d, .ui-body-e, .ui-btn-up-e, .ui-btn-hover-e, .ui-btn-down-e, .ui-bar-e, .ui-overlay-shadow,
+.ui-shadow, .ui-btn-active, .ui-body-a {
+    text-shadow: none;    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-content {
+    padding: 0;
+    position:absolute !important;
+    top : 0; 
+    right : 0;
+    bottom : 0; 
+    left : 0 !important;   
+}
+
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
+
+.ui-page .ui-header {
+    background: #00bad6 !important;
+    border-bottom-color: #000000;
+}
+
+.ui-header .ui-title {
+    height: 100% !important;
+    overflow: visible;
+    margin-top: -5% !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ui-title::before {
+    background: url("../images/featuredLogoWhite.png") no-repeat;
+    background-size: 35px 35px;
+    display: inline-block;
+    width: 35px; 
+    height: 35px;
+    content: "";
+    padding-right: 3px;
+    padding-bottom: 1px;
+    vertical-align: bottom;
+}
+
+.ui-input-text {
+    width: 70% !important;
+    padding: 1% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background: #f7f1d9 !important;
+    border-radius: 15px !important;
+    border: none;
+    box-shadow: none;
+    text-align: center !important;
+}
+
+.ui-focus, .ui-btn:focus {     
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.ui-btn:active {
+    background-color: #B6F2EB !important;
+}
+
+.ui-disabled {
+    opacity: 0.75 !important;
+}
+
+.ui-loader-default {
+    margin-top:-50px !important;
+    margin-left:-50px !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+span.ui-icon-loading {
+    background: url("../images/loader.svg") no-repeat scroll 0 0 / 100px 100px !important; 
+    width: 100px !important;
+    height: 100px !important;
+} 
+
+body.ui-loader {  
+    opacity: 1 !important;
+}
+
+div.ui-loader { 
+    opacity: 1 !important;
+}
+
+div.ui-loader span.ui-icon-loading { 
+    opacity: 1 !important;
+}
+
+[data-role="header"] h1 {
+    font-family: Pacifico;
+    font-size: 1.9em !important;
+    font-weight: 500 !important;
+    text-shadow: 0 0 0 !important;
+    text-shadow: none !important;   
+    text-align: center;    
+    line-height: 33px !important;
+    height: 33px !important;
+}
+
+[data-role=main] {
+    background: #faf6e7 !important;
+}
+
+[data-role=footer] {
+    width:100%;
+} 
+
+.head {
+    height: 52px;
+    border-top-style: solid;
+    width: 100% !important;
+}
+
+.pagetitle {
+    font-size: 1.9em !important;   
+    color: #f7f1d9;
+    text-align: center !important;
+}
+
+.login { 
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 26% !important;
+    height: 19px !important;
+    background: #f7f1d9 !important;
+    color: #00bad6 !important;
+    text-align: center;
+    border-radius: 5px !important;
+}
+
+.facebook {
+    width: 130px;
+    height: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.contentLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    width: 250px;
+    height: 175px;
+}
+
+.contactLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9%;
+    margin-bottom: 8%;
+    width: 250px;
+    height: 175px;
+}
+
+.aboutLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7%;
+    padding-bottom: 8%;
+    width: 250px;
+    height: 175px;
+}
+
+.loginLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    width: 250px;
+    height: 175px;
+}
+
+/*.headerLogo {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    /*float: right;
+    margin-top: 8px !important;
+    margin-right: 8px !important
+}*/
+
+.hamburger {
+    height: 28px;
+    width: 28px;
+    float: left;
+    margin-top: 8px !important;
+    margin-left: 7px !important;
+}
+
+.createAccountBtn {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    width: 35% !important;
+    background-color: #f7f1d9 !important;
+    color: #00bad6 !important;
+    border-radius: 5px !important; 
+} 
+
+.bottom {
+    width:100%;
+    text-align: center;
+    color: #f7f1d9 !important;
+    text-shadow: none !important;
+    height: 60px; 
+    left: 0;
+    bottom: 0; 
+    margin-top: 10%;
+}
+
+#inputboxes {
+    margin-top: 12%;
+}
+
+#back {
+    text-decoration: none;
+    color: #f7f1d9 !important;
+    display: block;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15%;
+    text-shadow:0 0 0;
+}
+
+#createAccountLink {
+    color: #f7f1d9 !important;
+    text-decoration: none !important;
+}
+
+#guestLogin {
+    color: #f7f1d9 !important;
+    text-decoration: none !important;   
+}
+
+#loginAsGuest {
+    margin-bottom: 10% !important;
+}
+
+#createAccountLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 7%;
+    width: 250px;
+    height: 175px;
+}
+
+#restaurantAccountLink {
+    display: block;
+    text-decoration: none;
+    text-shadow:0 0 0;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    font-size: 0.8em;
+}
+
+#pageContent {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00bad6;
+    font-size: 2em;
+    margin-top: 1%;
+}
+
+#contentSmall {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00bad6;
+    margin-top: -10%;
+}
+
+#contactEmail {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-top: -6%; 
+}
+
+#emailLink {
+    text-decoration: none !important;
+    color: #00bad6 !important;
+}
+
+#contactContent {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1%;
+    padding-bottom: 1%;
+    color: #00bad6;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#aboutContent {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #02ADC7;
+    line-height: 1.4em;    
+}
+
+#aboutCopyright {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5% !important;
+    margin-bottom: -2% !important;
+    padding-bottom: 2%;
+    color: #00bad6;
+}
+
+#aboutHeading {
+    padding-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -3% !important;
+    margin-top: -1% !important;
+    color: #02ADC7;
+    font-size: 1.4em !important;
+    font-weight: 600;
+}
+
+#aboutTitle {
+    font-family: Pacifico;
+    font-size: 2.2em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    color: #00bad6;
+    letter-spacing: 1.5px;
+}
+
+#aboutTab {
+    margin-bottom: -4% !important;
+}
+
+#webLink {
+    text-decoration: none !important;
+    color: #00bad6 !important;
+    padding-bottom: 10%;
+    font-size: 1.2em;
+}
+
+#developmentTeam {
+    margin-bottom: 8% !important;
+}
+
+#moodsHeader {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    height: 40px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#moodsYes {
+    background: url("../images/moodsYes.png")no-repeat; 
+    background-size: 80px 80px;
+    float: left;
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-top: 100%;
+    margin-left: 5%;
+}
+
+#moodsNo {
+    background: url("../images/moodsNo.png")no-repeat; 
+    background-size: 80px 80px; 
+    float: right;
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-top: 100%;
+    margin-right: 5%;
+}
